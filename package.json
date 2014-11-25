@@ -29,5 +29,11 @@
     "each-async": "^1.1.0",
     "globby": "^1.0.0",
     "less": "^2.1.0"
+  },
+  "devDependencies": {
+    "uglify-js": "^2.4.15"
+  },
+  "scripts": {
+    "compile_css_to_js_fn": "uglifyjs css-to-js-fn.template.js -cm"
   }
 }

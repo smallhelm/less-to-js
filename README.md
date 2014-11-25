@@ -14,7 +14,7 @@ turns into
 
 hello.less.js
 ```javascript
-if(typeof document!=='undefined')require('insert-css')(".hello .world{color:#f66}")
+(function(e){if("undefined"!=typeof document){var t=document;if(t.less_to_js__inserted=t.less_to_js__inserted||{},!t.less_to_js__inserted[e]){t.less_to_js__inserted[e]=!0;var s=t.createElement("style");s.setAttribute("type","text/css"),"textContent"in s?s.textContent=e:s.styleSheet.cssText=e,t.getElementsByTagName("head")[0].appendChild(s)}}}(".hello .world{color:#f66}"));
 ```
 
 Which can then be used in the browser or server. For example requried in a project using browserify
