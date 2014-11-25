@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 var glob = require("globby");
+var eachAsync = require("each-async");
 var less_to_js = require("../index");
 
 var patterns = process.argv.slice(2);
@@ -8,6 +9,13 @@ glob(patterns, function(err, files){
 	if(err){
 		throw err;
 	}
-
-	files.forEach(less_to_js);
+	eachAsync(files, function(file, i, done){
+		less_to_js(file, function(err){
+			done(err || null);
+		});
+	}, function(err){
+		if(err){
+			throw err;
+		}
+	});
 });

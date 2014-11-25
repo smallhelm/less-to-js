@@ -26,6 +26,7 @@
     "less-to-js": "bin/less-to-js"
   },
   "dependencies": {
+    "each-async": "^1.1.0",
     "globby": "^1.0.0",
     "less": "^2.1.0"
   }
