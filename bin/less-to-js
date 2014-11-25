@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+var glob = require("globby");
+var less_to_js = require("../index");
+
+var patterns = process.argv.slice(2);
+glob(patterns, function(err, files){
+	if(err){
+		throw err;
+	}
+
+	files.forEach(less_to_js);
+});

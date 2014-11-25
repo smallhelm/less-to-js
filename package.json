@@ -1,0 +1,32 @@
+{
+  "name": "less-to-js",
+  "version": "0.0.0",
+  "description": "Turn .less files into isomorphic (browser and node) .js - i.e. require('./somefile.less.js');",
+  "author": "smallhelm",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smallhelm/less-to-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/smallhelm/less-to-js/issues"
+  },
+  "homepage": "https://github.com/smallhelm/less-to-js",
+  "keywords": [
+    "less",
+    "isomorphic",
+    "cli"
+  ],
+  "main": "index.js",
+  "files": [
+    "bin",
+    "index.js"
+  ],
+  "bin": {
+    "less-to-js": "bin/less-to-js"
+  },
+  "dependencies": {
+    "globby": "^1.0.0",
+    "less": "^2.1.0"
+  }
+}
