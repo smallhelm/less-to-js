@@ -4,22 +4,21 @@ Turns `.less` files into `.js` files that can run in the browser or in node. (ju
 
 hello.less
 ```less
-.hello{
+.hello {
   .world {
     color: lighten(red, 20%);
   }
 }
 ```
-Then compile the less to js
-```sh
-$ less-to-js hello.less
-```
-Which will create a new file
+turns into
+
 hello.less.js
 ```javascript
 if(typeof document!=='undefined')require('insert-css')(".hello .world{color:#f66}")
 ```
-Which file can be used in the browser or server. i.e. requried in a project using browserify
+
+Which can then be used in the browser or server. For example requried in a project using browserify
+
 app.js
 ```javascript
 require('./hello.less.js');
@@ -33,7 +32,7 @@ install
 ```sh
 $ sudo npm install -g less-to-js
 ```
-simply run it with a file path globs that you want to compile
+simply run it with file path globs that you want to compile
 ```sh
 $ less-to-js src/**/*.css src/**/*.less
 ```
@@ -43,7 +42,7 @@ install
 ```sh
 $ npm install less-to-js
 ```
-Usage example:
+Usage example
 ```javascript
 var less_to_js = require("less-to-js");
 
