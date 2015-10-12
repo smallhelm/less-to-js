@@ -27,14 +27,9 @@
   },
   "dependencies": {
     "clean-css": "3.2.9",
+    "css-to-css.js": "^1.0.0",
     "each-async": "1.1.1",
     "globby": "1.2.0",
     "less": "2.5.0"
-  },
-  "devDependencies": {
-    "uglify-js": "2.4.21"
-  },
-  "scripts": {
-    "compile_css_to_js_fn": "uglifyjs css-to-js-fn.template.js -cm"
   }
 }
