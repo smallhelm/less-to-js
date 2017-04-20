@@ -1,3 +1,7 @@
+# less-to-js
+
+[![build status](https://secure.travis-ci.org/smallhelm/less-to-js.svg)](https://travis-ci.org/smallhelm/less-to-js)
+
 What it does
 ------------
 Turns `.less` files into `.js` files that can run in the browser or in node. (just does nothing in node)

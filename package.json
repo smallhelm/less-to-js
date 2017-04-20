@@ -25,11 +25,14 @@
   "bin": {
     "less-to-js": "bin/less-to-js"
   },
+  "scripts": {
+    "test": "./bin/less-to-js tests/*.less && git diff --exit-code && echo test-passed"
+  },
   "dependencies": {
-    "clean-css": "^3.2.9",
-    "css-to-css.js": "^1.0.0",
-    "each-async": "1.1.1",
-    "globby": "1.2.0",
-    "less": "2.5.0"
+    "clean-css": "^4.0.12",
+    "css-to-css.js": "^1.0.1",
+    "each-async": "^1.1.1",
+    "globby": "^6.1.0",
+    "less": "^2.7.2"
   }
 }

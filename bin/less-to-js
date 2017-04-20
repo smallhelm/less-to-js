@@ -5,10 +5,9 @@ var eachAsync = require("each-async");
 var lessToJS = require("../index");
 
 var patterns = process.argv.slice(2);
-glob(patterns, function(err, files){
-  if(err){
-    throw err;
-  }
+glob(patterns).catch(function(err){
+  throw err;
+}).then(function(files){
   eachAsync(files, function(file, i, done){
     lessToJS(file, function(err){
       done(err || null);
