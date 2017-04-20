@@ -26,7 +26,7 @@
     "less-to-js": "bin/less-to-js"
   },
   "dependencies": {
-    "clean-css": "3.2.9",
+    "clean-css": "^3.2.9",
     "css-to-css.js": "^1.0.0",
     "each-async": "1.1.1",
     "globby": "1.2.0",
