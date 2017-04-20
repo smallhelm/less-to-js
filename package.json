@@ -1,6 +1,6 @@
 {
   "name": "less-to-js",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Turn .less files into isomorphic (browser and node) .js - i.e. require('./somefile.less.js');",
   "author": "smallhelm",
   "license": "MIT",
